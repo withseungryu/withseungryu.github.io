@@ -22,7 +22,7 @@ public class BackJoonilosayook {
 			if (s[i] <= 100 && s[i] >= 0) {
 				continue;
 			} else {
-				System.out.println("�����Դϴ�.");
+				System.out.println("ERRRRRR");
 			}
 		}
 
