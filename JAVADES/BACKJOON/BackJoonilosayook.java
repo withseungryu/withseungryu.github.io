@@ -22,7 +22,7 @@ public class BackJoonilosayook {
 			if (s[i] <= 100 && s[i] >= 0) {
 				continue;
 			} else {
-				System.out.println("¿À·ùÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 			}
 		}
 
