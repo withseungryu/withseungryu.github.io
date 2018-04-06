@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <title>4_1ParkREJINA</title>
+    <link rel="stylesheet" type="text/css" href="Regina_pratice.css">
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css?family=Poppins:500');        
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+        a{
+            color:black;
+            text-decoration:none;
+        }
+        a:visited{
+            color:black;
+        }
+        a:hover{
+            color:black;  
+        }
+
+.logo{
+    float: left;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.menu{
+    float: right;
+    margin-right:200px;
+    margin-top: 50px;
+}
+
+.about, .team, .work, .blog, .contact{
+    float: left;
+    font-size: 10pt;
+    font-family: 'Poppins', sans-serif;
+    
+
+    margin-right: 20px;
+    
+}
+.about, .team, .work, .blog, .contact:hover{
+    cursor: pointer;
+}
+.mainment{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.brand{
+    font-size: 50pt;
+    
+}
+.ourteam:hover{
+    cursor: pointer;
+}
+.ourteam{
+    font-size: 10pt;
+    border-style: hidden;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    width:180px;
+    height:40px;
+    margin-left:44%
+}
+.ourteament{
+    width:180px;
+    height: 25px;
+    padding-top:10px;
+   
+}
+.mainwrap{
+    background-color: white;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.topimage{
+    
+    display: flex;
+    width: 1400px;
+    height: 325px;
+    position: relative;
+
+    
+}
+.topimage1_ment{
+    
+    position: relative;
+    width: 410px;
+    height: 225px; 
+    margin-top: 200px;
+    margin-left: 70px;
+}
+.topimage1{
+    border-style: none;
+    border-radius: 20pt;
+    margin-left: 250px;
+    position: relative;
+    background-image: url("./image1.png");
+}
+.topimage1_bold{
+    font-size: 30pt;
+    color: white;
+}
+.topimage1_white{
+    font-size: 10pt;
+    color: gray;
+}
+.topimage2{
+    border-style: none;
+    border-radius: 20pt;
+    margin-left: 50px;
+    position: relative;
+    background-image: url("./image2.png");
+}
+.topimage2_ment{
+    border-style: none;
+    border-radius: 20pt;
+    margin-top: 200px;
+    margin-left: 70px;
+}
+.topimage2{
+    width: 470px;
+    height: 325px;
+}
+.topimage2_bold{
+    font-size: 30pt;
+    color: white;
+}
+.topimage2_white{
+    font-size: 10pt;
+    color: gray;
+}
+
+.bottomimage{
+border-style: none;
+    border-radius: 20pt;
+    width: 1500px;
+    height: 422px;
+    display: flex;
+    
+    margin-left: 250px;
+}
+.bottomimage1{
+    border-style: none;
+    border-radius: 20pt;    
+    background-image: url("./image3.jpg");
+}
+.bottomimage1_ment{
+    border-style: none;
+    border-radius: 20pt;
+    width: 950px;
+    height: 422px;
+    color: white;
+    margin-top:300px;
+    margin-left: 50px;
+}
+.bottomimage1_bold{
+    font-size: 30pt;
+}
+.bottomimage1_white{
+    font-size: 10pt;
+    color: gray;
+}
+.footment{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    z-index: -1;
+}
+.service{
+    color: gray;
+    font-size: 10pt;
+}
+.ready{
+    font-size: 30pt;
+}
+.template{
+    color: gray;
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 10px;
+}
+.footerwrap{
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 500px;
+    left: 500px;
+    justify-content: center;
+    z-index: -1;
+}
+.finallogo{
+    display: flex;
+    justify-content: center;
+    
+}
+.google, .facebook, .instagram, .twitter{
+    margin-right : 5px;
+}
+/* .fullwrap{
+    display: none;
+} */
+
+/* display: table-cell!!!!  width, height justify-  text-align ->center  */
+
+
+</style>
+
+ <script
+ src="https://code.jquery.com/jquery-3.3.1.js"
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $("body").css("display", "none");
+        $("body").fadeIn(1000);
+        $(".about, .work, .blog, .contact, .team").mouseover(function(){
+            $(this).css("color", "gray");
+
+        });
+        $(".about, .work,.blog,.contact,.team").mouseout(function(){
+            $(this).css("color", "black");
+        });
+        $(".ourteam").mouseover(function(){
+            $(".ourteam").css("background-color", "black");
+            $(".ourteam").css("color","white");
+        });
+        $(".ourteam").mouseout(function(){
+            $(".ourteam").css("background-color","white");
+            $(".ourteam").css("color","black");
+        });
+        
+
+
+
+    });
+</script>
+
+</head>
+<body>
+    <div class="fullwrap">
+    <div class="headmainwrap">
+    <header>
+        <div class="headwrap clearfix">
+            <img src="logo.png" alt="logo" class="logo" id="logo">
+            <div class="menu">
+                <div class="about">About</div>
+                <div class="team">Team</div>
+                <div class="work">Work</div>
+                <div class="blog">Blog</div>
+                <div class="contact">Contact</div>
+                </div>
+                <br><br><br><br><br><br><br><br><br>
+            <div class="mainment">
+                <span class="brand">We Create Brands.</span><br>
+                <div class="ourteam"><div class="ourteament">Meet our team ></div></div>
+            </div>
+        </div>
+        </header>
+        <main>
+        <div class="mainwrap clearfix">
+            <div class="topimage">
+                <div class="topimage1">
+                    <!-- <img src="image1.png" alt="img1" class"image1"> -->
+                    <div class="topimage1_ment">
+                    <div class="topimage1_bold">iWatch Design</div>
+                    <div class="topimage1_white">Art direction, Branding</div>
+                </div>
+                </div>
+                <div class="topimage2">
+                    <!-- <img src="image2.png" alt="img2" class"image2"> -->
+                    <div class="topimage2_ment">
+                    <div class="topimage2_bold">Cup Filo</div>
+                    <div class="topimage2_white">UX design, Photoshop Makeup</div>
+                </div>
+            </div>
+            </div>
+            <br>
+
+            <div class="bottomimage">
+                <div class="bottomimage1">
+                    <!-- <img src="image3.png" alt="img3" class"image3"> -->
+                    <div class="bottomimage1_ment">
+                    <div class="bottomimage1_bold">Foodie Design</div>
+                    <div class="bottomimage1_white">Web design, Marketing</div>
+                </div></div>
+            </div>
+        </div>
+        </main>
+    </div>
+    <!-- <br><br><br><br><br><br><br><br> -->
+        <footer>
+            <div class="footerwrap">
+                <div class="footment">
+                    <span class="service">We provide a full range of digital services</span><br><br>
+                    <span class="ready">Are You Ready? <a href="#logo">Let's Work</a></span><br><br>
+                   
+                </div>
+                <div class="finallogo_ment">
+                    <div class="finallogo">
+                    <div class="facebook">
+                        <img src="facebook.jpg" alt="facebook">
+                    </div>
+                    <div class="twitter">
+                        <img src="twitter.jpg" alt="twitter">
+                    </div>
+                    <div class="google">
+                        <img src="google.jpg" alt="google">
+                    </div>
+                    <div class="instagram">
+                            <img src="instagram.jpg" alt="instagram">
+                        </div>
+                </div>
+                    <div class="template">
+                            © 2017 Regina - Creative Agency HTML Template
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+</div>
+</body>
