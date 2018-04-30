@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <title>YOUTOPIA </title>
+    <link rel="stylesheet" type="text/css" href="utopia.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Chicle');
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+<script>
+    $(document).ready(function(){
+        $(".logo").mouseover(function(){
+            $(".utopia_info").css("display", "block");
+        });
+        $(".logo").mouseout(function(){
+            $(".utopia_info").css("display", "none");
+        });
+        $(".image2").mouseover(function(){
+            $(".image2_2").css("display", "block");
+        });
+        $(".image2").mouseout(function(){
+            $(".image2_2").css("display", "none");
+        });
+        $(".doit").click(function(){
+            alert("뻥 뚤어버릴꺼야!!!!!!!!!");
+        });
+        $(".beauti").mouseover(function(){
+            $(".beauti").css("background-color", "black");
+            $(".beauti").css("color", "white");
+        });
+      
+        $(".beauti").mouseout(function(){
+            $(".beauti").css("background-color", "skyblue");
+            $(".beauti").css("color", "white");
+        });
+        $(".about, .developer, .inform, .contacts").mouseover(function(){
+            $(this).css("color", "skyblue");
+
+        });
+        $(".about, .developer, .inform, .contacts").mouseout(function(){
+            $(this).css("color", "white");
+        }); 
+        $(".image2").click(function(){
+            $(".box1").fadeIn(1000);
+            $(".image2ment").fadeOut(1000);
+            
+            $(".image2").animate({
+                'left':'30%'
+            });
+        });
+        });
+</script>
+    </head>
+    <body>
+        <div class="fullwrap">
+            <div class="fullback">.</div>
+        <header>
+            <div class="header_wrap clearfix">
+              
+                <div class="logo">&#128701;Y&TOPIA
+                        <div class="utopia_info">
+                                Your ToILET IS UTOPIA.
+                            </div>
+                </div>
+                <div class="menu">
+                <div class="about">About</div>
+                <div class="developer">Developer</div>
+                <div class="inform">Inform</div>
+                <div class="contacts">Contacts</div>
+                
+            </div>
+            
+            <br><br><br><br><br><br>
+            <div class="closemen">
+                <span class="doiet">YoU CaN Do IT!</span><br><br></div>
+                <div class="beauti">Burst through ></div>
+            </div>
+
+        
+        </header>
+        <main>
+            
+            <br><br>
+            <div class="main_menu">
+                <div class="main_menu_left clearfix">
+                    <div class="image1">
+                        <div class="image1ment">UNIVERSITY OF SEOUL</div>
+                        <!-- <img src="uos.jpg" alt="UOS"> -->
+                    </div>
+                    </div>
+                <div class="main_menu_right clearfix">                   
+                    <div class="image2"><div class="image2ment">SUBWAY</div>
+                    <div class="box">
+                        <table class="box1">
+                            <tr>
+                                <td class="line_1">1호선</td>
+                                <td class="line_2">2호선</td>
+                                <td class="line_3">3호선</td>
+                            </tr>
+                            <tr>
+                                <td class="line_4">4호선</td>
+                                <td class="line_5">5호선</td>
+                                <td class="line_6">6호선</td>
+                            </tr>
+                            <tr>
+                                <td class="line_7">7호선</td>
+                                <td class="line_8">8호선</td>
+                                <td class="line_9">9호선</td>
+                            </tr>
+                                    
+                        </table>
+                    </div>
+                        <!-- <span class="image2_ing"><img src="subway.png" alt="SUBWAY"></span> -->
+                        <!-- <div class="image2_2">
+                        <img src="subwayinform.jpg" alt="subwayinform">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+            <footer>           
+                 <div class="copy">©2018 Withseungryu</div>
+        </footer>
+
+            
+        </div>
+    </div>
+    </body>
+    </html>
