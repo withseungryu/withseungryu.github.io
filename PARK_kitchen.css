@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 a{
     color:black;
     text-decoration:none;
@@ -15,7 +17,8 @@ a:hover{
     z-index: -1;
 }
 .deve{
-    font-size: 30pt;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50pt;
     color: gray;
     font-weight: bold;
     position: relative;
@@ -29,8 +32,8 @@ a:hover{
 .front{
     position: relative;
     letter-spacing: 5pt;
-   
-    left:250px;
+    bottom: 80px;
+    left:520px;
     font-size:100px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
@@ -39,8 +42,8 @@ a:hover{
     position: relative;
     letter-spacing: 5pt;
     font-size:100px;
-    top:130px;
-    left:450px;
+    bottom:20px;
+    left:480px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -51,9 +54,22 @@ a:hover{
     border-style: solid;
     position: relative;
     left: 50px;
-    top: 350px;
+    top:150px;
     color: black;
     font-size: 25pt;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 50%;
+}
+
+.f_log{
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+.b_log{
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+    font-family: 'Roboto Mono', monospace;
 }
